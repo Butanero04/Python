@@ -1,9 +1,11 @@
 #Escriba un programa que lea un número y dice si es positivo o negativo, 
 # consideramos el cero como positivo
 
-n1= float(input("Negativo o Positivo"))
+numero = float(input("Introduce un numero: "))
 
-if n1 >= 0:
-    print("{n1} es positivo")
+if numero > 0:
+    print("El numero es positivo")
 else:
-    print("{n2} es negativo")
+    print("El numero es negativo")
+
+print("Fin del programa")

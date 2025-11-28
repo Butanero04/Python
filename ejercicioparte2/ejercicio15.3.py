@@ -1,10 +1,12 @@
-a = int(input("Dame la altura de tu piramide inversa"))
+##15. Ejercicio.  Crea una aplicación que dibuje una pirámide invertida de asteriscos. Nosotros le pasamos 
+##la altura de la pirámide por teclado.
 
-
-if a <= 0:
-    print("ERROR: ERES TONTO DEBE DE SER MAYOR QUE 0")
-else:
-    for i in range (1,a+1):
-        
-        #construir especios
-        for j in range(i-1,altura)
+altura = int(input("Introduce la altura de la pirámide invertida: "))
+for i in range(altura, 0, -1):
+    
+    for j in range(altura - i):
+        print(" ", end="")
+    
+    for k in range(2 * i - 1):
+        print("*", end="")
+    print()
